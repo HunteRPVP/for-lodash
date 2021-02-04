@@ -8,8 +8,10 @@ import * as _ from 'lodash';
 })
 export class AppComponent {
   title = 'for-lodash';
+  array = [1];
+  other = [1];
 
   lodash_test() {
-    this.title = _.reverse(this.title);
+    this.other = _.concat(this.array, 2, [3], [4]);
   }
 }
